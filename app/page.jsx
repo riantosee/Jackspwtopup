@@ -2,6 +2,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import BannerSlider from "@/components/home/BannerSlider";
+import Trending from "@/components/home/Trending";
 import GameGrid from "@/components/home/GameGrid";
 import HowTo from "@/components/home/HowTo";
 import Features from "@/components/home/Features";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Navbar />
       <main>
         <BannerSlider />
+        <Trending />
         <GameGrid />
         <HowTo />
         <Features />
