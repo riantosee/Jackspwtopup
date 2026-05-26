@@ -1,0 +1,47 @@
+/* app/globals.css */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:         #0d0d0d;
+  --bg-2:       #111111;
+  --bg-3:       #161410;
+  --bg-4:       #1c1814;
+  --border:     #1e1a14;
+  --border-2:   #2a2318;
+  --accent:     #c9853a;
+  --accent-2:   #e0a060;
+  --text:       #e0d5c8;
+  --text-2:     #9a8878;
+  --text-3:     #5a4a3a;
+  --text-4:     #3a2c20;
+  --success:    #4acf7a;
+  --radius:     6px;
+  --radius-sm:  4px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+img { display: block; max-width: 100%; }
+button { cursor: pointer; }
+input, select, textarea { font-family: inherit; }
+a { text-decoration: none; color: inherit; }
+
+/* Utilities */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border-width: 0;
+}
