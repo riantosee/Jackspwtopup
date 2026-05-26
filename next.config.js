@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["placehold.co", "img.youtube.com"],
+    domains: ["placehold.co"],
+    unoptimized: true,
   },
 };
 
